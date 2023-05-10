@@ -2,9 +2,9 @@ import React from 'react'
 
 const NotImplemented = () => {
   return (
-    <div>
+    <article>
       Not implemented, the assingment requested only the booking system to be implemented.
-    </div>
+    </article>
   )
 }
 
