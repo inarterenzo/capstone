@@ -62,7 +62,7 @@ const BookingForm = (props) => {
     <>
         {
             submit ?
-            <div style={style}>
+            <div style={style} aria-label="A confirmation message of your booking.">
                 <h3>Your reservation</h3>
                 <p>Date: {date}</p>
                 <p>Time: {time}</p>
@@ -73,7 +73,7 @@ const BookingForm = (props) => {
                 </div>
             </div>
               :
-              <form style={style} onSubmit={handleSubmit}>
+              <form style={style} onSubmit={handleSubmit}aria-label="A form to complete the booking" >
                 <h3>Book now</h3>
                 <label htmlFor="res-date">Choose date</label>
                 <input type="date" min={today} max="2023-08-30" id="res-date" required onChange={handleDate} />
